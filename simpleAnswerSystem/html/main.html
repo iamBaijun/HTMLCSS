@@ -1,0 +1,67 @@
+<!DOCTYPE >
+<html>
+	<head>
+		<title>简易答题系统</title>
+		<meta charset="utf-8" />
+		<script type="text/javascript" src="../js/main.js"></script>
+	</head>
+	<body onkeydown="KeyDown()" oncontextmenu="event.returnValue=false">
+		<header>
+			<div>
+				<h3>简易答题系统</h3>
+			</div>
+			<hr/>
+		</header>
+		<!--运算设置-->
+		<div id="setUp" style="display: block;">
+			<div>
+				<div><h4>请先设置运算规则，设置好后，先点击生成按钮再请点击隐藏按钮</h4></div>
+				<label>设置运算位数</label>
+				<select id="selectCount">
+					<option >1</option>
+					<option selected="selected">2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+				</select>
+			</div>
+			<div>
+				<label>设置运算符号</label>
+				<input type="radio" name="arithmetic" value="0" />+
+				<input type="radio" name="arithmetic" value="1" />-
+				<input type="radio" name="arithmetic" value="2" />*
+				<input type="radio" name="arithmetic" value="3" />/
+				<input type="radio" name="arithmetic" value="4" checked="checked"/>混合
+			</div>
+			<div>
+				<label>设置运算个数</label>
+				<input type="text" value = "10" id="listIndex" />
+			</div>
+			<button id="create">生成</button>
+			<button id="setUpNone">隐藏</button>
+		</div>
+		<!--分数统计-->
+		<div>
+			<div  id="">
+				<span>总题数:</span><input type="text" readonly="readonly" id="f1"/>
+				<span>总分数:</span><input type="text" readonly="readonly" id="f2"/>
+				<span>使用时间:</span><input type="text" readonly="readonly" id="f4"/>
+				<span>现在时间:</span><input type="text" readonly="readonly" id="f3"/>
+			</div>
+		</div>
+		<!--运算主题-->
+		<div>
+			<h3>开始答题</h3>
+			<div>
+				<div>答对一题得一分，答错或者不答不得分</div>
+			</div>
+			<hr/>
+			<div>
+				<table id="main">
+					
+				</table>
+			</div>
+			<button id="fraction" style="display: none;">提交答案,计算分数</button>
+		</div>
+	</body>
+</html>
