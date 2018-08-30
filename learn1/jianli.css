@@ -16,18 +16,20 @@ div{
 	
 }
 header{
+	
 	position:fixed;
 	top:0%;
 	left:0%;
+	
 	width:100%;
-	height:13%;
+	height:20%;
 	background-color:#00BFFF;
 	 z-index:9;
 
 }
 .content{
-	position:relative;
-	top:13%;
+	position:absolute;
+	top:20%;
 	width:100%;
 	height:90%;
 	
