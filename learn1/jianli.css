@@ -65,4 +65,13 @@ ul{
 	list-style:none;
 	padding:3% 3% 3% 3%;
 }
+li{
+	margin:1% 1% 1% 1%;
+}
+table{
+	border:1px solid red;
+}
+td{
+	border:1px solid red;
+}
 
